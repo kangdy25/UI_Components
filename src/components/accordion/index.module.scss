@@ -32,4 +32,14 @@
             }
         }
     }
+    .item2 {
+        .description {
+            display: none;
+        }
+        &.current {
+            .description {
+                display: block;
+            }
+        }
+    }
 }
