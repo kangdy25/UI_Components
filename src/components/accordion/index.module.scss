@@ -42,4 +42,19 @@
             }
         }
     }
+    .item3 {
+        overflow: hidden;
+        .description {
+            padding: 0 15px;
+            border-bottom: 0;
+            max-height: 0;
+            transition: ease 0.3s;
+        }
+        &.current .description{
+            padding: 15px;
+            border-bottom: 1px solid #777;
+            max-height: 100px;
+        }
+
+    }
 }
