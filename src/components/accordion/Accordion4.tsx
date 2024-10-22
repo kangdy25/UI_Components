@@ -22,6 +22,9 @@ const itemBuilder = ({id, title, description } : {id: string, title: string, des
 
 const initiator = (wrapper: HTMLDivElement) => {
     let currentId : string | null = null;
+    const $h3 = document.createElement('h3');
+    $h3.innerText = '#4. Vanila JavaScript';
+
     const $ul = document.createElement('ul');
     $ul.classList.add(cx('container'));
 
@@ -43,9 +46,9 @@ const initiator = (wrapper: HTMLDivElement) => {
     const $items = data.map(itemBuilder);
     $ul.append(...$items)
 
-    wrapper.append($ul);
+    wrapper.append($h3, $ul);
     ($items[0].children[0] as HTMLElement).click;
 }
 
-const Accordion4 = () => <VanillaWrapper title='#4' initiator={initiator} />
+const Accordion4 = () => <VanillaWrapper initiator={initiator} />
 export default Accordion4

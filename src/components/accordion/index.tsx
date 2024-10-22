@@ -4,6 +4,7 @@ import Accordion1 from './Accordion1';
 import Accordion2 from './Accordion2';
 import Accordion3 from './Accordion3';
 import Accordion4 from './Accordion4';
+import Accordion5 from './Accordion5';
 
 const Accordions = () => {
     return (
@@ -13,6 +14,7 @@ const Accordions = () => {
             <Accordion2/>
             <Accordion3/>
             <Accordion4/>
+            <Accordion5/>
         </div>
     )
 }
